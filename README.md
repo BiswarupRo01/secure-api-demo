@@ -134,7 +134,7 @@ spring.jpa.open-in-view=false
 
 ```bash
 # Clone the repository
-git clone <your-repo-url>
+git clone https://github.com/BiswarupRo01/secure-api-demo.git
 cd secure-api-demo
 
 # Build the project
