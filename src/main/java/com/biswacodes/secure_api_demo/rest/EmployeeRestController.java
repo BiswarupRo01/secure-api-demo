@@ -48,13 +48,7 @@ public class EmployeeRestController {
 
         Employee dbEmployee = employeeService.save(employee);
 
-        URI location = null;
-
-        try {
-            location = new URI("api/employees/" + dbEmployee.getId());
-        } catch (URISyntaxException e) {
-            // ignore
-        }
+        URI location = URI.create("/api/employees/" + dbEmployee.getId());
 
         return ResponseEntity.created(location).body(dbEmployee);
     }
